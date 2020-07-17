@@ -12,3 +12,5 @@ Steps to use the project:
 3. Run 'npm start'
 4. It will show 'listening to requests on port 4000'
 5. Open your browser and go to localhost:4000
+
+Go to Issues for example of pictures.
