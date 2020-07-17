@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 3 | Chatroom</title>
+
+    <!-- js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- fullCalendar -->
+    <link rel="stylesheet" href="../plugins/fullcalendar/main.min.css">
+    <link rel="stylesheet" href="../plugins/fullcalendar-daygrid/main.min.css">
+    <link rel="stylesheet" href="../plugins/fullcalendar-timegrid/main.min.css">
+    <link rel="stylesheet" href="../plugins/fullcalendar-bootstrap/main.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <!-- Static navbar and sidebar -->
+        <div id="navbar"></div>
+        <div id="sidebar"></div>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6"></div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active">Chatroom</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+
+                <!-- DIRECT CHAT -->
+                <div class="card direct-chat direct-chat-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">Chatroom</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Conversations are loaded here -->
+                        <div class="direct-chat-messages" id="chatbox">
+                            <div id="output"></div>
+                            <div id="feedback"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /.card-footer -->
+                <div class="card-footer">
+                    <input id="handle" type="text" placeholder="Your Name" class="form-control">
+                    <div class="input-group">
+                        <input id="message" type="text" placeholder="Type Message..." class="form-control">
+                        <span class="input-group-append">
+                            <button id="send" class="btn btn-primary">Send</button>
+                        </span>
+                    </div>
+                </div>
+                <!-- /.card-footer-->
+            </section>
+        </div>
+        <!--/.direct-chat -->
+
+        </section>
+
+        <!-- /.content-wrapper -->
+
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../dist/js/adminlte.min.js"></script>
+    <!-- To call static pages -->
+    <script src="../staticpages/StaticPage.js"></script>
+
+    <!-- js script -->
+    <script src="../dist/js/chat.js"></script>
+</body>
+
+</html>
