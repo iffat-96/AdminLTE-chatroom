@@ -14,3 +14,12 @@ Steps to use the project:
 5. Open your browser and go to localhost:4000
 
 Go to Issues for example of pictures.
+
+
+-----------UPDATE------------
+I've live this project in my server. Check it out:
+
+miffat.xyz 
+
+
+😊
